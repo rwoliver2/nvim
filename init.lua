@@ -73,6 +73,15 @@ A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex call pencil#init() ]], fal
 A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex let g:pencil#textwidth = 80 ]], false)
 A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex SoftPencil ]], false)
 
+-- Actiate additional writing plugins for text files
+A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex call lexical#init() ]], false)
+A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex call litecorrect#init() ]], false)
+
+-- Add thesaurus and dictionary
+g["lexical#dictionary"] = {"/usr/share/dict/words"}
+g["lexical#thesaurus"] = {"~/.local/share/thesaurus.txt"}
+g["lexical#spell"] = true
+
 -- Function for keybindings
 function map(mode, lhs, rhs, opts)
     local options = { noremap = true }

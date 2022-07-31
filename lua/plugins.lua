@@ -15,5 +15,9 @@ return require('packer').startup(function()
 	use 'w0rp/ale'
 	use 'junegunn/goyo.vim'
 	use 'kyazdani42/nvim-tree.lua'
+	use 'reedes/vim-lexical'
+	use 'reedes/vim-litecorrect' 
+  	use 'reedes/vim-textobj-sentence'
+	use 'reedes/vim-wordy'
 end)
 
