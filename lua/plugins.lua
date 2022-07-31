@@ -4,8 +4,6 @@ return require('packer').startup(function()
 	use 'folke/tokyonight.nvim'
 	use 'itchyny/lightline.vim'
 	use 'vim-syntastic/syntastic'
-	use 'scrooloose/nerdtree'
-	use 'tiagofumo/vim-nerdtree-syntax-highlight'
 	use 'ap/vim-css-color'
 	use 'junegunn/fzf'
 	use 'frazrepo/vim-rainbow'
@@ -16,4 +14,6 @@ return require('packer').startup(function()
 	use 'kchmck/vim-coffee-script'
 	use 'w0rp/ale'
 	use 'junegunn/goyo.vim'
+	use 'kyazdani42/nvim-tree.lua'
 end)
+
