@@ -68,7 +68,7 @@ A.nvim_create_autocmd('TextYankPost', {
     end,
 })
 
--- Autoload plugins on certain filetypes
+-- Activate Pencil upon loading text files
 A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex call pencil#init() ]], false)
-A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex setlocal nonu ]], false)
-A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex DittoOn ]], false)
+A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex let g:pencil#textwidth = 80 ]], false)
+A.nvim_exec([[ autocmd FileType markdown,mkd,text,tex SoftPencil ]], false)
