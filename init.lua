@@ -1,5 +1,5 @@
--- Robert Oliver's Neovim Configuration
--- Inspired by Derik Taylor and Luke Smith's configuration
+-- Neovim Configuration for Robert Oliver
+-- Inspired mainly by the configuration of Derik Taylor and Luke Smith
 -- To install, copy to ~/.config/nvim/init.lua and ~/.config/nvim/lua/plugins.lua
 
 -- Load pluigns
