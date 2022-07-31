@@ -1,6 +1,6 @@
 # Robert's Neovim Configuration
 
-# Installation
+## Installation
 
 Clone repo locally then run the following commands (_adjust paths as needed_):
 
